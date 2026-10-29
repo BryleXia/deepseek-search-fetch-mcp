@@ -1,0 +1,58 @@
+{
+  "name": "deepseek-search-fetch-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for the DeepSeek Search and Fetch APIs: ranked web search and page-to-Markdown fetch for Claude Code and any MCP client.",
+  "type": "module",
+  "main": "index.mjs",
+  "bin": {
+    "deepseek-search-fetch-mcp": "index.mjs"
+  },
+  "files": [
+    "index.mjs",
+    "lib/",
+    "README.md",
+    "README.en.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20.3.0"
+  },
+  "scripts": {
+    "start": "node index.mjs",
+    "test": "node --test test/unit.test.mjs",
+    "smoke": "node test/mcp-smoke.mjs",
+    "smoke:list": "node test/mcp-smoke.mjs --list-only",
+    "verify:package": "node scripts/verify-package.mjs",
+    "verify:published": "node scripts/verify-package.mjs --from-registry",
+    "prepublishOnly": "node --test test/unit.test.mjs"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "mcp-server",
+    "deepseek",
+    "web-search",
+    "search",
+    "fetch",
+    "claude-code",
+    "claude",
+    "llm"
+  ],
+  "license": "MIT",
+  "author": "BryleXia",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BryleXia/deepseek-search-fetch-mcp.git"
+  },
+  "homepage": "https://github.com/BryleXia/deepseek-search-fetch-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/BryleXia/deepseek-search-fetch-mcp/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.1",
+    "zod": "4.6.7"
+  }
+}
