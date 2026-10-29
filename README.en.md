@@ -1,13 +1,24 @@
+<div align="center">
+
 # deepseek-search-fetch-mcp
 
-A stdio MCP server that wraps DeepSeek's official **Search** and **Fetch** APIs, for Claude Code, Claude Desktop, Cursor, and any other MCP client.
+A stdio MCP server that turns DeepSeek's official **Search / Fetch API** into two tools for Claude Code and any MCP client.
+
+[![npm](https://img.shields.io/npm/v/deepseek-search-fetch-mcp?color=cb3837&logo=npm&logoColor=white)](https://www.npmjs.com/package/deepseek-search-fetch-mcp)
+[![CI](https://github.com/BryleXia/deepseek-search-fetch-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/BryleXia/deepseek-search-fetch-mcp/actions/workflows/ci.yml)
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
+[![node](https://img.shields.io/badge/node-%E2%89%A520.3-339933?logo=node.js&logoColor=white)](https://nodejs.org)
+
+[中文](./README.md) · [Install](#install) · [Tools](#tools) · [Behavior](#behavior)
+
+</div>
+
+## What it does
 
 | Tool | What it does | Upstream API |
 |---|---|---|
 | `deepseek_search` | Web search with ranked results: title, URL, snippet, long summary, date, site, authority, relevance | `POST https://api.deepseek.com/v1/tools/search` |
 | `deepseek_fetch` | Fetch one page as title + Markdown | `POST https://api.deepseek.com/v1/tools/fetch` |
-
-中文文档：[README.md](./README.md)
 
 ## Requirements
 
