@@ -1,6 +1,6 @@
 {
   "name": "deepseek-search-fetch-mcp",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "MCP server for the DeepSeek Search and Fetch APIs: ranked web search and page-to-Markdown fetch for Claude Code and any MCP client.",
   "type": "module",
   "main": "index.mjs",
